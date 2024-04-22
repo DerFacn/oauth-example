@@ -1,0 +1,22 @@
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+<form method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button>Login</button>
+</form>
+
+or <a href="{{ url_for('auth.signup') }}">Signup</a> or <a href="{{ url_for('auth.oauth') }}">Log in with Google</a>

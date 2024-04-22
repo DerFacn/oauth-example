@@ -1,0 +1,6 @@
+{% if g.user %}
+{{ g.user.username }}
+<a href="{{ url_for('auth.logout') }}">Logout</a>
+{% else %}
+<a href="{{ url_for('auth.signup') }}">Signup</a>
+{% endif %}
